@@ -67,7 +67,7 @@ const HeroSection = () => {
           >
             <div className="w-1.5 h-1.5 rounded-full bg-white" />
             <span className="text-white text-[9px] md:text-[11px] font-bold tracking-[0.2em] uppercase">
-              Welcome to Visora Visa Agency
+              Welcome to Immi Trueadvisor Immigration
             </span>
             <div className="w-1.5 h-1.5 rounded-full bg-white/40" />
           </motion.div>

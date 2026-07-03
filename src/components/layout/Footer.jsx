@@ -37,7 +37,7 @@ const Footer = () => {
           
           {/* Right: Big Logo */}
           <div className="flex flex-col lg:items-end justify-center lg:text-right mt-10 lg:mt-0">
-            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter italic mb-1 opacity-90">VISORA</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter italic mb-1 opacity-90">IMMI TRUEADVISOR IMMIGRATION</h1>
             <p className="text-lg md:text-xl font-bold tracking-[0.2em] uppercase text-red-500 mr-2">
               Trusted Immigration <br className="hidden lg:block"/> Agency
             </p>
@@ -71,7 +71,7 @@ const Footer = () => {
           <div className="md:col-span-8 lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-10">
             {/* Office 1 */}
             <div>
-              <h4 className="font-bold mb-3 text-lg">Visora New York</h4>
+              <h4 className="font-bold mb-3 text-lg">Immi Trueadvisor New York</h4>
               <div className="text-[15px] text-gray-300 space-y-1 mb-8">
                 <p>Madison Avenue 351</p>
                 <p>10017 NY New York</p>
@@ -86,7 +86,7 @@ const Footer = () => {
             
             {/* Office 2 */}
             <div>
-              <h4 className="font-bold mb-3 text-lg">Visora London</h4>
+              <h4 className="font-bold mb-3 text-lg">Immi Trueadvisor London</h4>
               <div className="text-[15px] text-gray-300 space-y-1 mb-8">
                 <p>Oxford Street 313</p>
                 <p>W1D 2LU London</p>
@@ -101,7 +101,7 @@ const Footer = () => {
             
             {/* Office 3 */}
             <div>
-              <h4 className="font-bold mb-3 text-lg">Visora Dubai</h4>
+              <h4 className="font-bold mb-3 text-lg">Immi Trueadvisor Dubai</h4>
               <div className="text-[15px] text-gray-300 space-y-1 mb-8">
                 <p>Sheikh Zayed Road</p>
                 <p>P.O. Box 12345 Dubai</p>
@@ -123,7 +123,7 @@ const Footer = () => {
           
           {/* Left: Copyright */}
           <div className="text-gray-500 text-center lg:text-left">
-            <p>&copy; {new Date().getFullYear()} Visora Immigration Agency. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Immi Trueadvisor Immigration Agency. All rights reserved.</p>
           </div>
           
           {/* Middle: Socials */}
@@ -137,7 +137,7 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
             <div className="flex items-center space-x-2">
               <div className="w-1.5 h-1.5 bg-red-500 rounded-full"></div>
-              <a href="mailto:info@visoracare.com" className="hover:text-white transition-colors font-medium">info@visoracare.com</a>
+              <a href="mailto:info@immitrueadvisor.com" className="hover:text-white transition-colors font-medium">info@immitrueadvisor.com</a>
             </div>
             <span className="hidden sm:block text-white/20">|</span>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

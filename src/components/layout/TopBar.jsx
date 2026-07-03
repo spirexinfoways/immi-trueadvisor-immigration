@@ -11,7 +11,7 @@ const TopBar = () => {
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer">
             <Mail size={16} className="text-red-500" />
-            <span>visoracare@gmail.com</span>
+            <span>info@immitrueadvisor.com</span>
           </div>
           <div className="flex items-center space-x-2 hover:text-white transition-colors cursor-pointer">
             <MapPin size={16} className="text-red-500" />
@@ -45,7 +45,7 @@ const TopBar = () => {
         <div className="flex justify-between items-center px-2">
           <div className="flex items-center space-x-1.5 hover:text-white transition-colors">
             <Mail size={13} className="text-red-400" />
-            <span className="font-medium tracking-wide">visoracare@gmail.com</span>
+            <span className="font-medium tracking-wide">info@immitrueadvisor.com</span>
           </div>
           <div className="flex items-center space-x-1.5 hover:text-white transition-colors">
             <MapPin size={13} className="text-red-400" />

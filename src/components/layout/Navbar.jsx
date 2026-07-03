@@ -66,7 +66,7 @@ const Navbar = () => {
             <div className="relative flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10 bg-red-600 rounded-full rounded-tr-none transform rotate-45 group-hover:scale-105 transition-transform shadow-lg">
               <Plane size={18} className="text-white transform -rotate-45" fill="currentColor" />
             </div>
-            <span className={`text-2xl lg:text-3xl font-bold tracking-tight transition-colors duration-300 ${isSticky ? '' : 'drop-shadow-md'}`}>Visora</span>
+            <span className={`text-lg lg:text-xl font-bold tracking-tight transition-colors duration-300 ${isSticky ? '' : 'drop-shadow-md'}`}>Immi Trueadvisor Immigration</span>
           </Link>
 
           {/* Mobile Menu Toggle Button */}
@@ -146,7 +146,7 @@ const Navbar = () => {
                     <div className="relative flex items-center justify-center w-8 h-8 bg-red-600 rounded-full rounded-tr-none transform rotate-45 shadow-sm">
                       <Plane size={16} className="text-white transform -rotate-45" fill="currentColor" />
                     </div>
-                    <span className="text-2xl font-bold tracking-tight">Visora</span>
+                    <span className="text-lg font-bold tracking-tight">Immi Trueadvisor Immigration</span>
                   </div>
                   <button 
                     onClick={() => setIsMobileMenuOpen(false)}

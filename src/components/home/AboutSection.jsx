@@ -159,7 +159,7 @@ const AboutSection = () => {
 
             {/* Description */}
             <motion.p variants={fadeUpVariants} className="text-gray-500 leading-relaxed mb-10 text-[15px] xl:text-[16px] max-w-[600px]">
-              Visora Visa Consultancy was created to provide uniquely designed premium services in the world of education and migration. As people are dreaming more hands-on experience.
+              Immi Trueadvisor Immigration Consultancy was created to provide uniquely designed premium services in the world of education and migration. As people are dreaming more hands-on experience.
             </motion.p>
 
             {/* Grid List */}

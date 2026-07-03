@@ -7,7 +7,7 @@ const testimonialsRow1 = [
     name: "Olivia Richardson",
     location: "New York, USA",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop",
-    text: "Visora made my immigration process incredibly smooth. Their team guided me through every step of the visa application. I felt supported and informed the entire time."
+    text: "Immi Trueadvisor Immigration made my immigration process incredibly smooth. Their team guided me through every step of the visa application. I felt supported and informed the entire time."
   },
   {
     name: "Sophia Mitchell",
@@ -19,7 +19,7 @@ const testimonialsRow1 = [
     name: "Aisha Khan",
     location: "Toronto, Canada",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop",
-    text: "I never knew applying for a visa could be this stress-free! The experts at Visora are so honest in their approach. Plus, the preparation was top-notch."
+    text: "I never knew applying for a visa could be this stress-free! The experts at Immi Trueadvisor Immigration are so honest in their approach. Plus, the preparation was top-notch."
   },
   {
     name: "David Smith",
@@ -46,7 +46,7 @@ const testimonialsRow2 = [
     name: "Sarah Jenkins",
     location: "Auckland, NZ",
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150&auto=format&fit=crop",
-    text: "From the initial consultation to the final visa stamp, the experience was flawless. I highly recommend Visora to anyone looking to relocate."
+    text: "From the initial consultation to the final visa stamp, the experience was flawless. I highly recommend Immi Trueadvisor Immigration to anyone looking to relocate."
   },
   {
     name: "Omar Al-Fayed",
