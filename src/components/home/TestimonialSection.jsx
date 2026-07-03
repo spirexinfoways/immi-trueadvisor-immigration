@@ -78,7 +78,7 @@ const TestimonialCard = ({ t }) => (
 
 const TestimonialSection = () => {
   return (
-    <section className="py-10 lg:py-28 bg-white relative overflow-hidden">
+    <section className="py-12 lg:py-28 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
         
         {/* Header */}
@@ -87,7 +87,7 @@ const TestimonialSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0a1e5e] mb-4 tracking-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0a1e5e] leading-[1.15] mb-4 tracking-tight"
           >
             What people are saying?
           </motion.h2>

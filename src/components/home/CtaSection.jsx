@@ -1,16 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
+import bgImage from '../../assets/img1.jpg';
 
 const CtaSection = () => {
   return (
-    <section className="relative py-20 lg:py-28 w-full overflow-hidden min-h-[600px] flex items-center">
+    <section className="relative py-12 lg:py-28 w-full overflow-hidden min-h-[600px] flex items-center">
       {/* Background Image with Fixed/Parallax Effect */}
       <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat bg-fixed"
+        className="absolute inset-0 w-full h-full bg-cover bg-no-repeat sm:bg-fixed max-sm:bg-[85%_top] sm:bg-[center_20%]"
         style={{ 
-          backgroundImage: `url('https://i.pinimg.com/736x/13/f2/f5/13f2f5caf80b8863fdc7eb7953190146.jpg')`,
-          backgroundPosition: 'center 20%'
+          backgroundImage: `url(${bgImage})`
         }}
       />
       
@@ -25,7 +25,7 @@ const CtaSection = () => {
             transition={{ duration: 0.8 }}
             className="bg-white rounded-3xl p-8 sm:p-12 shadow-2xl"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold leading-[1.2] mb-6 text-[#0a1e5e] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold leading-[1.15] mb-6 text-[#0a1e5e] tracking-tight">
               Ready to Start <br />
               Your <span className="text-red-600">Immigration</span> <br />
               Journey?

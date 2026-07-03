@@ -37,7 +37,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative h-[100dvh] min-h-[600px] flex items-center overflow-hidden bg-slate-900">
+    <div className="relative h-[75vh] min-h-[480px] lg:h-[100dvh] lg:min-h-[600px] flex items-center overflow-hidden bg-slate-900">
       
       {/* Background Images */}
       <AnimatePresence initial={false}>

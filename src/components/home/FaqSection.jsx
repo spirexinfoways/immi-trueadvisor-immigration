@@ -30,7 +30,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="py-10 lg:py-10 bg-[#fafcff]">
+    <section className="py-12 lg:py-24 bg-[#fafcff]">
       <div className="container mx-auto px-4 max-w-4xl">
         
         {/* Header */}
@@ -49,7 +49,7 @@ const FaqSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold text-[#0a1e5e] mb-4 tracking-tight"
+            className="text-4xl md:text-5xl font-bold text-[#0a1e5e] leading-[1.15] mb-4 tracking-tight"
           >
             Frequently <br className="hidden sm:block" /> Asked Questions
           </motion.h2>

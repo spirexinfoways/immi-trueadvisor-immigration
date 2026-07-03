@@ -62,7 +62,7 @@ const headingLine2 = "Services Backed by Expertise".split(" ");
 
 const ServicesSection = () => {
   return (
-    <section className="py-20 lg:py-28 bg-[#f4f7fc] relative overflow-hidden">
+    <section className="pt-12 pb-4 sm:py-12 lg:py-28 bg-[#f4f7fc] relative overflow-hidden">
       {/* Decorative Background Image */}
       <div 
         className="absolute inset-0 opacity-[0.30] pointer-events-none bg-cover bg-center bg-no-repeat" 
@@ -92,7 +92,7 @@ const ServicesSection = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.8 }}
-            className="text-[28px] sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight flex flex-col items-center justify-center"
+            className="text-[28px] sm:text-4xl lg:text-5xl font-bold text-[#0a1e5e] leading-[1] flex flex-col items-center justify-center"
           >
             <div className="flex flex-wrap justify-center overflow-hidden">
               {headingLine1.map((word, i) => (

@@ -57,7 +57,7 @@ const fadeUpVariants = {
 
 const WhyChooseUsSection = () => {
   return (
-    <section className="py-5 lg:py-28 bg-white relative overflow-hidden">
+    <section className="py-12 lg:py-28 bg-white relative overflow-hidden">
       {/* Decorative subtle background for the left side (like the mountains in screenshot) */}
       <div 
         className="absolute bottom-0 left-0 w-full lg:w-1/2 h-[60%] opacity-[0.05] pointer-events-none bg-no-repeat bg-bottom bg-contain" 
@@ -94,7 +94,7 @@ const WhyChooseUsSection = () => {
           </div>
 
           {/* Right Column (7 columns out of 12) */}
-          <div className="lg:col-span-7 pt-30">
+          <div className="lg:col-span-7 pt-6 lg:pt-20">
             <motion.div 
               variants={staggerContainer}
               initial="hidden"

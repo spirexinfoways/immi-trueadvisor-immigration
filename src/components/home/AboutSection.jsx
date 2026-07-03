@@ -43,7 +43,7 @@ const scaleUpVariants = {
 
 const AboutSection = () => {
   return (
-    <section className="py-20 lg:py-28 bg-white overflow-hidden">
+    <section className="pt-4 pb-12 sm:py-12 lg:py-28 bg-white overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-10 items-center">
           
@@ -53,7 +53,7 @@ const AboutSection = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={staggerContainer}
-            className="relative pr-0 lg:pr-12 pl-4 sm:pl-16 lg:pl-20 mt-10 lg:mt-0 mb-32 lg:mb-0"
+            className="relative pr-0 lg:pr-12 pl-4 sm:pl-16 lg:pl-20 mt-4 sm:mt-10 lg:mt-0 mb-32 sm:mb-20 lg:mb-0"
           >
             {/* Main Image */}
             <motion.div variants={imageVariants} className="relative rounded-2xl overflow-hidden shadow-2xl h-[650px] xl:h-[650px]">
@@ -67,7 +67,7 @@ const AboutSection = () => {
             {/* Floating Left Card: Served Client */}
             <motion.div 
               variants={scaleUpVariants}
-              className="absolute top-[490px] sm:top-[60%] lg:top-1/2 left-0 sm:-left-6 lg:-left-4 xl:-left-8 transform sm:-translate-y-1/2 lg:-translate-y-1/4 max-sm:scale-[0.85] max-sm:origin-left bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] p-5 sm:p-6 w-[230px] sm:w-[260px] z-10"
+              className="absolute top-[490px] sm:top-[60%] lg:top-1/2 left-0 lg:-left-4 xl:-left-8 transform sm:-translate-y-1/2 lg:-translate-y-1/4 max-sm:scale-[0.85] max-sm:origin-left bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] p-5 sm:p-6 w-[230px] sm:w-[260px] z-10"
             >
               {/* Blue Plane Icon */}
               <div className="absolute -top-4 -right-4 bg-[#0a1e5e] rounded-full p-3 sm:p-4 shadow-lg border-4 border-white">
@@ -121,7 +121,7 @@ const AboutSection = () => {
             {/* Floating Right Card: Call for consultation */}
             <motion.div 
               variants={scaleUpVariants}
-              className="absolute -top-1 sm:top-auto sm:-bottom-8 lg:-bottom-10 left-30 sm:left-auto right-2 sm:right-0 lg:-right-4 bg-[#e63946] text-white rounded-2xl p-3 sm:p-6 flex items-center gap-3 sm:gap-4 shadow-xl z-10"
+              className="absolute -top-6 sm:top-auto sm:-bottom-8 lg:-bottom-10 left-30 sm:left-auto right-2 sm:right-0 lg:-right-4 bg-[#e63946] text-white rounded-2xl p-3 sm:p-6 flex items-center gap-3 sm:gap-4 shadow-xl z-10"
             >
               <div className="bg-white rounded-full w-9 h-9 sm:w-12 sm:h-12 flex items-center justify-center text-[#e63946] flex-shrink-0">
                 <FaPhoneAlt className="text-[14px] sm:text-[20px]" />
