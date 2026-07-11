@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import bgImage from '../../assets/img1.jpg';
 
-const CtaSection = () => {
+const CtaSection = ({ isGlobal }) => {
   return (
-    <section className="relative py-12 lg:py-28 w-full overflow-hidden min-h-[600px] flex items-center">
+    <section className={`relative w-full overflow-hidden flex items-center ${isGlobal ? 'py-10 min-h-[400px]' : 'py-12 lg:py-28 min-h-[600px]'}`}>
       {/* Background Image with Fixed/Parallax Effect */}
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-no-repeat sm:bg-fixed max-sm:bg-[85%_top] sm:bg-[center_20%]"

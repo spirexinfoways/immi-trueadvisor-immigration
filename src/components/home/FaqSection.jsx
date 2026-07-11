@@ -22,7 +22,7 @@ const faqs = [
   }
 ];
 
-const FaqSection = () => {
+const FaqSection = ({ isGlobal }) => {
   const [openIndex, setOpenIndex] = useState(0); // First one open by default
 
   const toggleFaq = (index) => {
@@ -30,7 +30,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="py-12 lg:py-24 bg-[#fafcff]">
+    <section className={`${isGlobal ? 'py-8' : 'py-12 lg:py-24'} bg-[#fafcff]`}>
       <div className="container mx-auto px-4 max-w-4xl">
         
         {/* Header */}

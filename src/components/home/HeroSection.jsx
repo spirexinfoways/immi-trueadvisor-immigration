@@ -5,21 +5,21 @@ import { ArrowUpRight } from 'lucide-react';
 const slides = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2069&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format,compress&w=1600&q=70",
     title: "Effortless Global Visa",
     titleBreak: "Services",
     description: "We provide a complete immigration & visa services for America, Canada & Australia for travel & education"
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format,compress&w=1600&q=70",
     title: "Your Journey to a",
     titleBreak: "New Life Starts Here",
     description: "Expert guidance for your permanent residency, study visa, and work permits globally."
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format,compress&w=1600&q=70",
     title: "Study Abroad with",
     titleBreak: "Top Universities",
     description: "Unlock your potential with our expert student visa consulting for top destinations worldwide."
@@ -41,19 +41,20 @@ const HeroSection = () => {
       
       {/* Background Images */}
       <AnimatePresence initial={false}>
-        <motion.div 
+        <motion.img 
           key={currentSlide}
+          src={slides[currentSlide].image}
+          loading={currentSlide === 0 ? "eager" : "lazy"}
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('${slides[currentSlide].image}')` }}
+          className="absolute inset-0 w-full h-full object-cover"
         />
       </AnimatePresence>
       
       {/* Dark Blue Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/95 via-[#0f172a]/70 to-[#0f172a]/30 sm:to-transparent z-[1]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/50 via-[#0f172a]/50 to-[#0f172a]/30 sm:to-transparent z-[1]" />
       <div className="absolute inset-0 bg-black/20 z-[1] md:hidden" /> {/* Extra darkening for mobile legibility */}
 
       {/* Content */}

@@ -76,9 +76,9 @@ const TestimonialCard = ({ t }) => (
   </div>
 );
 
-const TestimonialSection = () => {
+const TestimonialSection = ({ isGlobal }) => {
   return (
-    <section className="py-12 lg:py-28 bg-white relative overflow-hidden">
+    <section className={`${isGlobal ? 'py-8' : 'py-12 lg:py-28'} bg-white relative overflow-hidden`}>
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
         
         {/* Header */}
