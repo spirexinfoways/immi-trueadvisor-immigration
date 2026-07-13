@@ -103,6 +103,12 @@ export const nav = [
   },
   {
     label: 'Work', slug: '/work/hire-foreign-worker', children: [
+      {
+        label: 'LMIA Process', slug: '/work/lmia-process', children: [
+          { label: 'Skilled', slug: '/work/lmia-process/skilled' },
+          { label: 'Unskilled', slug: '/work/lmia-process/unskilled' },
+        ],
+      },
       { label: 'Hire a Foreign Worker', slug: '/work/hire-foreign-worker' },
       {
         label: 'Closed Work Permits', slug: '/work/closed-work-permit', children: [
@@ -2311,5 +2317,132 @@ export const pages = {
       'Lost document declarations',
       'Custodianship declarations for minor students',
     ],
+  },
+  '/work/lmia-process': {
+    title: 'LMIA Process', tag: 'Labour Market Impact Assessment',
+    body: [
+      'LMIA stands for "Labour Market Impact Assessment." Formerly known as "Labour Market Opinion" (or LMO), an LMIA is a document that a Canadian employer may need to obtain before hiring a foreign worker.',
+      'Anyone who has ever given any thought to immigrating to Canada has heard about the LMIA program. An LMIA is a critical document that Canadian employers must obtain before hiring any foreign worker. This document serves as a formal approval from the Canadian government, ensuring that the hiring of a foreign worker will not negatively impact the Canadian job market.',
+      'If their application is successful, they will then be provided with a document from Employment and Social Development Canada (ESDC) which states that they are allowed to hire a temporary worker to fill their shortage.',
+    ],
+    sections: [
+      {
+        heading: 'Employer eligibility for LMIA - Key Steps',
+        list: [
+          'Application Submission: Employers must submit a detailed application to Employment and Social Development Canada (ESDC). The application should demonstrate the employer\'s efforts to recruit Canadian citizens or permanent residents for the position and explain why a foreign worker is necessary.',
+          'Evaluation Criteria: ESDC evaluates the application based on various factors, including the impact on the Canadian labor market, wages, and working conditions offered. The application must show that the foreign worker will bring a positive or neutral impact on the job market.',
+          'Approval and Documentation: If the application is successful, ESDC issues an LMIA document. This document authorizes the employer to hire a temporary foreign worker for the specified role and duration.'
+        ],
+      },
+      {
+        heading: 'Benefits of Obtaining an LMIA for employers',
+        list: [
+          'Filling Skill Gaps: Helps employers address skill shortages in specific industries.',
+          'Economic Growth: Contributes to the economic growth by filling positions that are critical for business operations.',
+          'Compliance: Ensures that employers are compliant with Canadian immigration laws and regulations.'
+        ],
+      },
+      {
+        heading: 'Employer requirements for LMIA Canada',
+        paras: [
+          'LMIA employer requirements provide guidelines for Canadian employers seeking to hire foreign workers with specialized skills that are in limited supply. In Canada, hiring foreign workers necessitates obtaining a positive Labour Market Impact Assessment.',
+          'The LMIA requirements for employers include:'
+        ],
+        list: [
+          'Job Offer: Employers must extend a valid job offer to the foreign worker, detailing critical aspects such as job responsibilities, wages, working conditions, duration of employment, sick leave, and overtime pay. Employers must offer wages that meet or exceed the prevailing wage for the specific occupation and region.',
+          'Recruitment Effort: Employers must demonstrate efforts to hire Canadian citizens or permanent residents before considering foreign workers. This includes advertising the vacancy on mandatory job platforms like Job Bank and Star Jobs.',
+          'Recruitment Report: A detailed report on efforts to recruit Canadians, including job advertisement details, response summary, and justification for hiring a foreign worker.',
+          'Compliance with Regulations: Employers must adhere to all relevant laws and regulations.',
+          'Impact on the Labor Market: Employers must demonstrate a genuine need for the foreign worker’s skills and show that their employment will have a positive economic impact.'
+        ],
+      },
+      {
+        heading: 'Temporary Foreign Worker Program (TFWP)',
+        paras: [
+          'The Temporary Foreign Worker Program (TFWP) enables Canadian employers to hire temporary foreign workers to address short-term labor and skill shortages. To employ workers through the TFWP, employers must apply for an LMIA and pay a processing fee of $1,000 per worker.',
+          'The TFWP encompasses various streams, each designed to meet different labor market needs, including high-wage positions, low-wage positions, seasonal agricultural workers, and in-home caregivers.'
+        ],
+      },
+      {
+        heading: 'What Is The Purpose Of An LMIA For Employers?',
+        paras: [
+          'The purpose of the LMIA program is to ensure that hiring foreign workers does not adversely affect the Canadian labor market. It requires employers to demonstrate that there are no qualified Canadian citizens or permanent residents available to fill the position.'
+        ],
+      },
+      {
+        heading: 'LMIA based work permit',
+        paras: [
+          'LMIA applicants should be able to display their efforts in hiring Canadians and permanent residents before offering a job to a temporary foreign worker.',
+          'When an employer is given a positive LMIA, they can then forward it to the foreign worker who they wish to hire, so that they can submit it with their work permit application.'
+        ],
+      },
+      {
+        heading: 'Different Types Of LMIA for Employment',
+        list: [
+          'Support Work Permit applications: An LMIA to support an application for a work permit under the Temporary Foreign Worker Program.',
+          'LMIA for PR purpose: Used to support an Application for Permanent Residence in Canada. If permanent residence is sought based on Express Entry, the foreign worker is awarded 50-600 CRS points.',
+          'Support both Permanent Residence & Work Permit: Used to support both a permanent residence application and a work permit application.'
+        ],
+      },
+      {
+        heading: 'LMIA Processing Fees',
+        paras: [
+          'A processing fee of CAD 1,000 is required for each request for Labour Market Impact Assessment for work permit applications. ESDC has committed to a 10 business day processing time for specific types of applications, such as high-demand jobs, high-wage jobs, and short-duration jobs.'
+        ],
+      },
+      {
+        heading: 'LMIA Work Permit Temporary Foreign Worker Eligibility',
+        paras: [
+          'Before an individual applies to be a temporary foreign worker, they should be able to prove:'
+        ],
+        list: [
+          'They will leave Canada when their work permit expires.',
+          'They have enough money to provide for themselves during their stay in Canada.',
+          'They have no record of criminal activity and are not a danger to Canada’s security.'
+        ],
+      },
+      {
+        heading: 'Get Help With Your LMIA Application',
+        paras: [
+          `At ${COMPANY}, we are one of the best Canadian Immigration Consultants. We help people who wish to immigrate to Canada. Contact us regarding the LMIA employer requirements or any other LMIA related issue for a free assessment.`
+        ],
+      }
+    ],
+  },
+  '/work/lmia-process/skilled': {
+    title: 'Skilled LMIA (High-Wage Stream)', tag: 'Hiring Highly Skilled Foreign Talent',
+    body: [
+      'The Skilled or High-Wage LMIA stream allows Canadian employers to hire foreign workers for specialized, high-demand positions where the offered wage is at or above the provincial or territorial median hourly wage.',
+      'This pathway is essential for businesses seeking specialized expertise, managerial talent, or highly trained professionals to support innovation and economic growth in Canada.'
+    ],
+    sections: [
+      {
+        heading: 'Key Requirements for Skilled LMIA',
+        list: [
+          'Prevailing Wage: The wage offered to the foreign worker must meet or exceed the median hourly wage for the respective province or territory.',
+          'Transition Plan: Employers are required to submit a Transition Plan with their LMIA application, demonstrating their long-term strategy to reduce reliance on temporary foreign workers by recruiting and training Canadian citizens and permanent residents.',
+          'Extensive Recruitment Efforts: Employers must conduct thorough recruitment efforts to ensure no qualified Canadian is available for the position.',
+          'Workplace Compliance: Strict adherence to Canadian labor standards, ensuring the foreign worker receives the same benefits and working conditions as their Canadian counterparts.'
+        ],
+      }
+    ]
+  },
+  '/work/lmia-process/unskilled': {
+    title: 'Unskilled LMIA (Low-Wage Stream)', tag: 'Addressing Essential Labor Shortages',
+    body: [
+      'The Unskilled or Low-Wage LMIA stream is designed to help Canadian employers fill vital roles in industries facing significant labor shortages, where the offered wage is below the provincial or territorial median hourly wage.',
+      'This stream is frequently utilized in sectors such as agriculture, food processing, hospitality, and manufacturing, providing a legal and regulated pathway to sustain critical business operations.'
+    ],
+    sections: [
+      {
+        heading: 'Key Requirements for Unskilled LMIA',
+        list: [
+          'Cap on Low-Wage Workers: Businesses are subject to a cap on the proportion of low-wage temporary foreign workers they can employ, typically set at a maximum percentage of their total workforce.',
+          'Housing and Transportation: Employers must ensure that suitable and affordable housing is available for the foreign worker and must provide round-trip transportation to the work location in Canada.',
+          'Health Insurance: Employers are required to provide private health insurance coverage until the worker is eligible for provincial health coverage.',
+          'Union Consultation: For unionized positions, employers must demonstrate that they have consulted the union regarding the hiring of foreign workers.'
+        ],
+      }
+    ]
   },
 }
