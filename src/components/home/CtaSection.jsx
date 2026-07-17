@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import bgImage from '../../assets/img1.jpg';
 
 const CtaSection = ({ isGlobal }) => {
@@ -35,10 +36,10 @@ const CtaSection = ({ isGlobal }) => {
               Book a free consultation with one of our experts today
             </p>
             
-            <button className="bg-[#0a1e5e] hover:bg-blue-900 text-white font-bold py-3.5 px-6 rounded-lg text-xs sm:text-sm transition-all duration-300 flex items-center group shadow-md hover:shadow-lg">
+            <Link to="/contact" className="bg-[#0a1e5e] hover:bg-blue-900 text-white font-bold py-3.5 px-6 rounded-lg text-xs sm:text-sm transition-all duration-300 flex items-center group shadow-md hover:shadow-lg w-max">
               <span className="mr-2 uppercase tracking-wide">Schedule Consultation</span>
               <ArrowUpRight size={16} className="transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>

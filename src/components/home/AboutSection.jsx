@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { FaPaperPlane, FaAngleDoubleRight, FaPhoneAlt, FaPlane } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 // Animations
 const fadeUpVariants = {
@@ -180,9 +181,9 @@ const AboutSection = () => {
 
             {/* Bottom Actions */}
             <motion.div variants={fadeUpVariants} className="flex flex-wrap items-center gap-6 sm:gap-10">
-              <button className="bg-[#0a1e5e] text-white px-8 py-4 rounded-lg font-bold text-[13px] uppercase tracking-wider hover:bg-blue-900 transition flex items-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform duration-300">
+              <Link to="/about" className="bg-[#0a1e5e] text-white px-8 py-4 rounded-lg font-bold text-[13px] uppercase tracking-wider hover:bg-blue-900 transition flex items-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform duration-300 w-max">
                 Learn More <ArrowUpRight size={16} className="ml-2" />
-              </button>
+              </Link>
               
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-[#e63946] text-white flex items-center justify-center shadow-md">

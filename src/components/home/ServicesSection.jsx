@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { FaFileSignature, FaPassport, FaUserGraduate, FaFileAlt, FaAward, FaPlane } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -16,7 +17,7 @@ const cardVariants = {
   })
 };
 
-const ServiceCard = ({ icon: Icon, title, index }) => (
+const ServiceCard = ({ icon: Icon, title, index, link }) => (
   <motion.div 
     custom={index}
     initial="hidden"
@@ -32,9 +33,9 @@ const ServiceCard = ({ icon: Icon, title, index }) => (
     <p className="text-slate-500 text-[15px] leading-relaxed mb-6">
       Expert help with permanent residence ship processes for various countries. Prepare all the required document
     </p>
-    <a href="#" className="mt-auto text-[11px] font-bold text-slate-800 hover:text-red-600 transition-colors flex items-center uppercase tracking-widest">
+    <Link to={link} className="mt-auto text-[11px] font-bold text-slate-800 hover:text-red-600 transition-colors flex items-center uppercase tracking-widest">
       Learn More <ArrowUpRight size={14} className="ml-1 transform group-hover:translate-x-1 group-hover:-translate-y-1 hover:text-red-600 transition-transform" />
-    </a>
+    </Link>
   </motion.div>
 );
 
@@ -116,10 +117,10 @@ const ServicesSection = () => {
           
           {/* Left Side: 4 Cards (Takes up 2 columns on xl screens) */}
           <div className="xl:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-8">
-            <ServiceCard index={0} title="PR Applications" icon={FaFileSignature} />
-            <ServiceCard index={1} title="Post-landing Services" icon={FaPassport} />
-            <ServiceCard index={2} title="Student Visa Assistance" icon={FaUserGraduate} />
-            <ServiceCard index={3} title="Immigration Application" icon={FaFileAlt} />
+            <ServiceCard index={0} title="PR Applications" icon={FaFileSignature} link="/immigration/express-entry" />
+            <ServiceCard index={1} title="Post-landing Services" icon={FaPassport} link="/other/services" />
+            <ServiceCard index={2} title="Student Visa Assistance" icon={FaUserGraduate} link="/study/study-visa" />
+            <ServiceCard index={3} title="Immigration Application" icon={FaFileAlt} link="/immigration/other-programs" />
           </div>
 
           {/* Right Side: Image and Badges (Takes up 1 column on xl screens) */}
@@ -137,8 +138,8 @@ const ServicesSection = () => {
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             
-            {/* USA No 1 Agency Badge */}
-            <motion.div 
+            {/* USA No 1 Badge */}
+            {/* <motion.div 
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
@@ -148,9 +149,9 @@ const ServicesSection = () => {
               <FaAward size={28} className="mb-2 sm:mb-3 sm:text-[36px]" />
               <div className="text-center font-bold leading-tight">
                 <span className="block text-base sm:text-lg">USA No 1</span>
-                <span className="block text-[11px] sm:text-sm font-medium opacity-90">Visa Agency</span>
+                <span className="block text-[11px] sm:text-sm font-medium opacity-90">Visa Provider</span>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Floating Countries Served Card */}
             <motion.div 
@@ -161,7 +162,7 @@ const ServicesSection = () => {
               className="absolute bottom-4 sm:bottom-6 left-4 right-4 sm:left-6 sm:right-6 bg-white p-3 sm:p-4 rounded-xl flex items-center justify-between gap-2 shadow-xl z-10"
             >
               <div className="flex -space-x-2 sm:-space-x-3">
-                <img src="https://flagcdn.com/w80/us.png" alt="USA" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
+                {/* <img src="https://flagcdn.com/w80/us.png" alt="USA" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" /> */}
                 <img src="https://flagcdn.com/w80/ca.png" alt="Canada" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
                 <img src="https://flagcdn.com/w80/au.png" alt="Australia" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white bg-red-50 text-red-600 flex items-center justify-center font-bold text-xs sm:text-sm z-10">

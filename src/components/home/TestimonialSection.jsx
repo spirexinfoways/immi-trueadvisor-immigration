@@ -5,7 +5,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
 const testimonialsRow1 = [
   {
     name: "Olivia Richardson",
-    location: "New York, USA",
+    location: "",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop",
     text: "Immi Trueadvisor Immigration made my immigration process incredibly smooth. Their team guided me through every step of the visa application. I felt supported and informed the entire time."
   },

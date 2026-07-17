@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const slides = [
   {
@@ -106,10 +107,10 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="mt-6 md:mt-4"
           >
-            <button className="group relative inline-flex items-center justify-center px-6 md:px-8 py-3.5 md:py-4 font-bold text-white bg-red-600 rounded-lg overflow-hidden transition-all duration-300 hover:bg-red-700 hover:scale-[1.02] active:scale-95 shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+            <Link to="/about" className="group relative inline-flex items-center justify-center px-6 md:px-8 py-3.5 md:py-4 font-bold text-white bg-red-600 rounded-lg overflow-hidden transition-all duration-300 hover:bg-red-700 hover:scale-[1.02] active:scale-95 shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)]">
               <span className="mr-2 uppercase tracking-wider text-[12px] md:text-[13px]">Learn More</span>
               <ArrowUpRight size={16} className="transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform md:w-[18px] md:h-[18px]" />
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>
