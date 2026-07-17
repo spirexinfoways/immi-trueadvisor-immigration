@@ -196,9 +196,9 @@ const Navbar = () => {
               ))}
             </div>
 
-            <a href="tel:+176845399" className="bg-red-600 hover:bg-red-700 text-white px-7 py-3 rounded-full font-bold flex items-center transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 relative z-10">
+            <a href="tel:+12899026698" className="bg-red-600 hover:bg-red-700 text-white px-7 py-3 rounded-full font-bold flex items-center transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 relative z-10">
               <MessageSquare size={18} className="mr-2" />
-              +1 768 453 99
+              +1 289 902 6698
             </a>
           </div>
         </div>
