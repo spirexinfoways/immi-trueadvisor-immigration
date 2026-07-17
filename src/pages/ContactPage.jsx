@@ -63,8 +63,17 @@ const ContactPage = () => {
                     <MapPin size={24} />
                   </div>
                   <div className="pt-1">
-                    <h4 className="text-xl font-bold text-[#0a1e5e] mb-2">Office Address</h4>
-                    <p className="text-[15px] md:text-[16px] text-gray-600 leading-relaxed">123 Immigration Blvd, Suite 400<br/>Toronto, ON M5V 2T6, Canada</p>
+                    <h4 className="text-xl font-bold text-[#0a1e5e] mb-2">Office Addresses</h4>
+                    <p className="text-[15px] md:text-[16px] text-gray-600 leading-relaxed mb-4">
+                      <strong>Immi True Advisor</strong><br/>
+                      8293 Boul. Henri-Bourassa,<br/>
+                      Québec, QC G1G 5X1, Canada
+                    </p>
+                    <p className="text-[15px] md:text-[16px] text-gray-600 leading-relaxed">
+                      <strong>Immi True Advisor</strong><br/>
+                      1586 S 42th St W, Billings,<br/>
+                      Montana MT 59102, United States
+                    </p>
                   </div>
                 </div>
                 
@@ -73,8 +82,8 @@ const ContactPage = () => {
                     <Phone size={24} />
                   </div>
                   <div className="pt-1">
-                    <h4 className="text-xl font-bold text-[#0a1e5e] mb-2">Phone Number</h4>
-                    <p className="text-[15px] md:text-[16px] text-gray-600 leading-relaxed">+1 (555) 123-4567<br/>+1 (555) 987-6543</p>
+                    <h4 className="text-xl font-bold text-[#0a1e5e] mb-2">Phone Numbers</h4>
+                    <p className="text-[15px] md:text-[16px] text-gray-600 leading-relaxed">+1 289 902 6698<br/>+1 458 279 9266</p>
                   </div>
                 </div>
                 

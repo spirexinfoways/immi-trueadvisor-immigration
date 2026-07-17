@@ -271,7 +271,7 @@ const Navbar = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500 font-medium">Need help?</p>
-                      <a href="tel:+176845399" className="text-lg font-bold text-slate-900">+1 768 453 99</a>
+                      <a href="tel:+12899026698" className="text-lg font-bold text-slate-900">+1 289 902 6698</a>
                     </div>
                   </div>
 

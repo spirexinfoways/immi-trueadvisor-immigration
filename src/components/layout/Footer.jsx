@@ -75,7 +75,7 @@ const Footer = () => {
           <div className="md:col-span-8 lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-10">
             {/* Office 1 */}
             <div>
-              <h4 className="font-bold mb-3 text-lg">Immi Trueadvisor New York</h4>
+              <h4 className="font-bold mb-3 text-lg">Immi True Advisor</h4>
               <div className="text-[15px] text-gray-300 space-y-1 mb-8">
                 <p>8293 Boul. Henri-Bourassa,</p>
                 <p> Québec, QC G1G 5X1,</p>
@@ -90,7 +90,7 @@ const Footer = () => {
             
             {/* Office 2 */}
             <div>
-              <h4 className="font-bold mb-3 text-lg">Immi Trueadvisor London</h4>
+              <h4 className="font-bold mb-3 text-lg">Immi True Advisor</h4>
               <div className="text-[15px] text-gray-300 space-y-1 mb-8">
                 <p>1586 S 42th St W,</p>
                 <p> Billings, Montana MT 59102, </p>
