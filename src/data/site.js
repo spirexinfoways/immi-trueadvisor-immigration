@@ -3,8 +3,6 @@ export const PHONE = '+1 (555) 010-2040'
 export const EMAIL = 'info@immitrueadvisors.example'
 export const ADDRESS = '100 Advisor Way, Suite 500, Toronto, ON'
 
-import expressEntryHero from '../assets/02.jpg.jpeg';
-import expressEntrySection from '../assets/img1.jpg';
 
 // Main navigation: recursive tree of { label, slug, children? }
 export const nav = [

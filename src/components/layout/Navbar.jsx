@@ -3,7 +3,7 @@ import { Search, MessageSquare, ChevronDown, ChevronRight, Plane, Menu, X } from
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { nav as siteNav } from '../../data/site';
-import logoImg from '../../assets/03.png';
+import logoImg from '../../assets/logo_B.png';
 
 const DesktopL3 = ({ item }) => {
   if (!item.children) return null;
@@ -61,8 +61,8 @@ const MobileNavList = ({ items, depth = 1 }) => {
     <div className={`flex flex-col ${depth > 1 ? 'pl-4 border-l-2 border-gray-100/60 ml-2 mt-2 space-y-2.5' : 'pl-4 space-y-3 pt-2'}`}>
       {items.map((item, idx) => (
         <div key={idx} className="flex flex-col">
-          <Link 
-            to={item.slug} 
+          <Link
+            to={item.slug}
             className={`block ${depth === 1 ? 'text-[15px] font-medium text-slate-700' : depth === 2 ? 'text-[14.5px] text-gray-600' : 'text-[14px] text-gray-500'} hover:text-red-600 transition-colors`}
           >
             {item.label}
@@ -86,12 +86,12 @@ const Navbar = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setIsNavigating(true);
-    
+
     // The page auto-scrolls to top, wait a moment for the scroll event to settle, then re-enable transitions
     const timeout = setTimeout(() => {
       setIsNavigating(false);
     }, 400);
-    
+
     return () => clearTimeout(timeout);
   }, [location.pathname]);
 
@@ -113,21 +113,31 @@ const Navbar = () => {
       setIsSticky(window.scrollY > 200);
     };
     window.addEventListener('scroll', handleScroll);
-    
+
     // Trigger once on mount just in case we start scrolled down
     handleScroll();
-    
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const customNav = [
+  let customNav = [
     { label: 'Home', slug: '/' },
     ...siteNav.map(n => {
-      if (n.label === 'About Us') return { label: 'About', slug: '/about' };
+      if (n.label === 'About Us') return { ...n, label: 'About', slug: '/about' };
+      if (n.label === 'Other') {
+        // Return a copy of the "Other" menu with the appended items, without mutating the original siteNav
+        return {
+          ...n,
+          children: [
+            ...(n.children || []),
+            { label: 'Our Fees', slug: '/fees' },
+            { label: 'Contact Us', slug: '/contact' }
+          ]
+        };
+      }
       return n;
-    }),
-    { label: 'Contact Us', slug: '/contact' }
-  ];
+    })
+  ].filter(n => n.label !== 'Our Fees');
 
   return (
     <>
@@ -137,28 +147,31 @@ const Navbar = () => {
       <div className={`${isNavigating ? '!transition-none' : 'transition-all duration-300'} w-full z-50 ${isSticky ? 'fixed top-0 left-0 py-3 shadow-md bg-white lg:bg-transparent' : 'mt-4 lg:mt-5 relative'}`}>
 
         {/* Full width background for sticky state (Desktop only for animation) */}
-        {isSticky && !isNavigating && (
-          <motion.div
-            layoutId="navBackground"
-            className="absolute inset-0 bg-white hidden lg:block"
-            animate={{ borderRadius: 0 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          />
-        )}
+        <AnimatePresence>
+          {isSticky && !isNavigating && (
+            <motion.div
+              layoutId="navBackground"
+              className="absolute inset-0 bg-white hidden lg:block"
+              animate={{ borderRadius: 0 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            />
+          )}
+        </AnimatePresence>
 
         <div className={`flex items-center justify-between relative z-10 ${isSticky ? 'container mx-auto px-4' : ''}`}>
           {/* Logo */}
-          <Link to="/" className={`flex items-center group transition-transform duration-500 hover:scale-105 relative z-10`}>
-            <img src={logoImg} alt="Immi Trueadvisor Immigration" className="h-16 lg:h-20 w-auto object-contain drop-shadow-sm" />
+          <Link to="/" className={`flex items-center group transition-transform duration-500 hover:scale-105 relative z-10 pl-2 lg:pl-4 xl:pl-8`}>
+            {/* Size adjusted for small laptops (lg) and larger screens (xl) */}
+            <img src={logoImg} alt="Immi Trueadvisor Immigration" className="h-12 lg:h-10 xl:h-12 w-auto object-contain drop-shadow-sm" />
           </Link>
 
           {/* Mobile Menu Toggle Button */}
-          <div className="lg:hidden relative z-10">
+          <div className="lg:hidden relative z-10 pr-2">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`p-2 focus:outline-none rounded-lg backdrop-blur-sm border transition-colors ${isSticky
-                  ? 'text-gray-800 border-gray-200 hover:bg-gray-100'
-                  : 'text-white bg-white/10 border-white/20 hover:bg-white/20'
+                ? 'text-gray-800 border-gray-200 hover:bg-gray-100'
+                : 'text-white bg-white/10 border-white/20 hover:bg-white/20'
                 }`}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -166,7 +179,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Nav Content */}
-          <div className="hidden lg:flex items-center relative p-1.5 pl-8">
+          <div className="hidden lg:flex items-center relative p-1 lg:p-1.5 lg:pl-4 xl:pl-8">
 
             {/* Pill background for normal state */}
             {!isSticky && (
@@ -178,9 +191,9 @@ const Navbar = () => {
               />
             )}
 
-            <div className="flex items-center space-x-6 font-semibold text-[15px] text-gray-800 mr-8 relative z-10">
+            <div className="flex items-center space-x-3 lg:space-x-4 xl:space-x-6 font-semibold text-[13px] lg:text-[14px] xl:text-[15px] text-gray-800 mr-4 lg:mr-4 xl:mr-8 relative z-10">
               {customNav.map((item, index) => (
-                <div key={index} className="relative group/l1 py-4">
+                <div key={index} className="relative group/l1 py-3 xl:py-4">
                   <Link
                     to={item.slug}
                     className={`flex items-center transition-colors ${location.pathname.startsWith(item.slug) && item.slug !== '/' ? 'text-red-600' : location.pathname === '/' && item.slug === '/' ? 'text-red-600' : 'hover:text-red-600'}`}
@@ -196,8 +209,8 @@ const Navbar = () => {
               ))}
             </div>
 
-            <a href="tel:+12899026698" className="bg-red-600 hover:bg-red-700 text-white px-7 py-3 rounded-full font-bold flex items-center transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 relative z-10">
-              <MessageSquare size={18} className="mr-2" />
+            <a href="tel:+12899026698" className="bg-red-600 hover:bg-red-700 text-white px-4 lg:px-5 xl:px-7 py-2 lg:py-2.5 xl:py-3 rounded-full font-bold flex items-center transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 relative z-10 whitespace-nowrap text-sm xl:text-base">
+              <MessageSquare size={16} className="mr-1 xl:mr-2" />
               +1 289 902 6698
             </a>
           </div>
